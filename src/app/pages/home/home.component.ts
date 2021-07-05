@@ -10,12 +10,12 @@ import { UsersService } from 'src/app/users.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private service.UsersService) { }
-  users:UsersResult;
+  constructor(private service:UsersService) { }
+  users:UserResult;
   
   ngOnInit(): void {
-    this.service.getUsers().subscribe((result.UserResult) => {
-      this:this.users = result,
+    this.service.getUsers().subscribe((result:UserResult) => {
+     this.users = result,
       console.log(result);
   });
   }

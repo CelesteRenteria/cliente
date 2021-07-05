@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient} from '@angular/common/http';
 import { UserResult } from './interfaces/userAPI';
 
 @Injectable({
@@ -7,7 +7,7 @@ import { UserResult } from './interfaces/userAPI';
 })
 export class UsersService {
 
-  constructor(private httpHttpClient) {
+  constructor(private http:HttpClient) {
     //this.getUser().subscribe((result.UserResult)=>(
     //console.log(result.data);
     //))
