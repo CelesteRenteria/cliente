@@ -4,8 +4,11 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { CrewComponent } from './pages/crew/crew.component';
+import { FeaturesComponent } from './pages/features/features.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { YachtsComponent } from './pages/yachts/yachts.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -13,6 +16,9 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'login', component:LoginComponent},
   { path: 'register',component:RegisterComponent},
+  { path: 'crew',component:CrewComponent},
+  { path: 'yachts',component:YachtsComponent},
+  { path: 'features',component:FeaturesComponent},
   { path: '', pathMatch: 'full', redirectTo: '/home' },
   { path: '**', component: NotfoundComponent }
 ]
