@@ -15,6 +15,7 @@ import { NavigationComponent } from './shared/navigation/navigation.component';
 import { CrewComponent } from './pages/crew/crew.component';
 import { FeaturesComponent } from './pages/features/features.component';
 import { YachtsComponent } from './pages/yachts/yachts.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { YachtsComponent } from './pages/yachts/yachts.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

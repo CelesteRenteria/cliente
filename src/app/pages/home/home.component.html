@@ -30,7 +30,7 @@
                         </span>
                     </span>
                 </strong>
-                expensive and fun
+                expensive
             </h1>
             <p class="featured lead">
                 Angular site that consumes an yachts API
@@ -40,6 +40,22 @@
 
 </div>
 
+<section class="user-container">
+
+    <article class="user" *ngFor="let user of users.data">
+        <div>
+            <img src="{{user.avatar}}" alt="">
+        </div>
+        <div>
+            <p>{{user.id}}</p>
+            <h4>{{user.firstname}}{{user.last_name}}</h4>
+            <p>{{user.email}}</p>
+        </div>
+        
+    </article>
+
+
+</section>
 
 
 <div class="container">
@@ -58,7 +74,7 @@
                         <a href="crew" class="btn btn-lg">Crew</a>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-md-6">
                     <div class="feature-box">
                         <a href="features" class="btn btn-lg">Features</a>
                     </div>
