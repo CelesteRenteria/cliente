@@ -1,4 +1,4 @@
-interface FeaturesResult {
+export interface FeaturesResult {
     id_feature: number;
     name: string;
     number: string;

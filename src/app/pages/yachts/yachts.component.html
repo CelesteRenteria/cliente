@@ -44,7 +44,23 @@
 
 <div class="container">
 
-    <h1>Necesito ayuda psicologica inmediata</h1>
+    <h1>Know our Yachts</h1>
+    <section class="yachts-container">
+
+        <article class="yachts" *ngFor="let yacht of yachts">
+            <div>
+                
+                <h3>{{yacht.name}}</h3>
+                <div>
+                    <img src="{{yacht.image}}">
+                </div>
+                <h5>{{yacht.ft}}</h5>
+            </div>
+            
+        </article>
+    
+    
+    </section>
 
     
 </div>

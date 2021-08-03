@@ -44,7 +44,20 @@
 
 <div class="container">
 
-    <h1>Necesito ayuda psicologica inmediata</h1>
+    <h1>Know our Features</h1>
+    <section class="features-container">
+
+        <article class="features" *ngFor="let feature of features">
+            <div>
+                <h3>{{feature.name}}</h3>
+                <h5>{{feature.number}} {{feature.type}}</h5>
+                <p>{{feature.description}}</p>
+            </div>
+            
+        </article>
+    
+    
+    </section>
 
     
 </div>

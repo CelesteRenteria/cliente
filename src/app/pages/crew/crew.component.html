@@ -44,7 +44,21 @@
 
 <div class="container">
 
-    <h1>Necesito ayuda psicologica inmediata</h1>
+    <h1>Meet our Crew</h1>
+    <section class="crew-container">
+
+    <article class="crew" *ngFor="let crew of crew">
+        <div>
+            <h3>{{crew.position}}</h3>
+            <h5>{{crew.name}} {{crew.lasname}}</h5>
+            <p>{{crew.age}}</p>
+        </div>
+        
+    </article>
+
+
+</section>
+
 
     
 </div>
