@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,5 +6,9 @@ import { Injectable } from '@angular/core';
 })
 export class YachtsService {
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
+  
+  getYachts(){
+    return this.http.get<YachtResult>("https://celeste-client-server.herokuapp.com/features")
+  }
 }
